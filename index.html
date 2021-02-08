@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="display">
+            <h1 id="time">00:00</h1>
+        </div>
+        <div class="information">
+            <div id="state">
+                <h1 id="sessioncount" class="white">Session 1</h1>
+
+            </div>
+            <div class="modify">
+                <div id="session">
+                    <p class="static">Session Time</p>
+                    <p class="stbt orange" id="sessiontime">0 min</p>
+                    <button class="add white darkbtn" onclick="sessionadd()">+</button>
+                    <button class="subtract white darkbtn" onclick="sessionsubtract()">-</button>
+                </div>
+                
+                    
+                
+                <div id="break">
+                    <p class="static">Break Time</p>
+                    <p class="stbt cyan" id="breaktime">0 min</p>
+                    <button class="add " onclick="breakadd()">+</button>
+                    <button class="subtract" onclick="breaksubtract()">-</button>
+
+                </div>
+
+            </div>
+           <div class="buttons">
+               <button class="pause" id="start" onclick="startclock()">Start</button>
+               <button id="reset" onclick="reset()"> Reset</button>
+
+           </div>
+
+        </div>
+    
+    </div>
+    
+</body>
+<script src="index.js"></script>
+</html>
